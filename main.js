@@ -219,7 +219,10 @@ document.getElementById("searchButton").addEventListener("click", function () {
         fetch('https://d3srxd2wvksmqd.cloudfront.net/public/offers/feed.php?user_id=443469&api_key=19000f5294c8ae47018fbf6a737ac4f2&s1=&s2=')
         .then(response => response.json())
         .then(data => {
-            data.forEach(value => {
+            // Extract the first 5 items from the data array
+            const firstFiveData = data.slice(0, 5);
+    
+            firstFiveData.forEach(value => {
                 const mainDiv = document.getElementById('offerBox');
                 const a = document.createElement('a');
                 const singleOffer = document.createElement('div');
@@ -237,4 +240,5 @@ document.getElementById("searchButton").addEventListener("click", function () {
             // Handle error here, for example, display an error message to the user
         });
     });
+    
     
