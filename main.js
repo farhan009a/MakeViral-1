@@ -75,7 +75,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
           percentageText.style.opacity = "1"; // Show percentage text
         }, 400);
 
-        fetch('https://randomuser.me/api/?results=20')
+        fetch('https://randomuser.me/api/?results=25')
         .then(response => response.json())
         .then(data => {
           const mainDiv = document.getElementById('imageContainer');
