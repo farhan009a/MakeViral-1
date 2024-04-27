@@ -230,7 +230,8 @@ body{
    left: -60%; /* Adjust the starting position */
    margin: 12px;
    opacity: 0; /* Initially hidden */
-   animation: percentage-animation 19s forwards; /* Animation only applied when triggered */
+   display: none;
+   animation: percentage-animation 17s forwards; /* Animation only applied when triggered */
  }
  
  @keyframes percentage-animation {

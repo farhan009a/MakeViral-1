@@ -15,8 +15,8 @@ fetch('https://randomuser.me/api/?results=15')
 
             image.className = 'image-item';
             row.className = 'row';
-            col4.className = 'col-4';
-            col8.className = 'col-8';
+            col4.className = 'col';
+            col8.className = 'col';
 
             const img = document.createElement('img');
             const h5 = document.createElement('h5');
@@ -57,9 +57,12 @@ document.getElementById("searchButton").addEventListener("click", function () {
         // Reset loader animation
         loaderFill.style.animation = "none";
         void loaderFill.offsetWidth; // Trigger reflow
-      
+        setTimeout(function () {
+          document.getElementById('percentage').style.display = "block";
+      }, 1500);
         // Update percentage text
-        var percent = 0;
+        setTimeout(function () {
+          var percent = 0;
         var interval = setInterval(function () {
           if (percent >= 99) {
             clearInterval(interval);
@@ -68,6 +71,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
             percentageText.textContent = percent + "%";
           }
         }, 150);
+        },1200)
       
         // Start loader animation after a brief delay
         setTimeout(function () {
