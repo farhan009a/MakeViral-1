@@ -766,12 +766,30 @@ iframe{
   .custom-loader{
     width: 350px;
   }
+  .percentage {
+    position: absolute;
+    top: 0;
+    left: -60%;
+    margin: 20px 0;
+    opacity: 0;
+    display: none;
+    animation: percentage-animation 17s forwards;
+}
   .loader-container {
     position: relative;
     width: 375px;
 }
 } 
 @media screen and (max-width: 380px) {
+  .percentage {
+    position: absolute;
+    top: 0;
+    left: -60%;
+    margin: 24px 0px;
+    opacity: 0;
+    display: none;
+    animation: percentage-animation 17s forwards;
+}
   .useH {
     text-align: left;
     width: 350px;
