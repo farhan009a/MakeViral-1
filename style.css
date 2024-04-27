@@ -39,15 +39,17 @@ body{
    color: #E5E5E5!important;
 }
 .searchBox {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 8px;
-   background: rgba(255, 255, 255, 0.1);
-   border-radius: 50px;
-   position: relative;
-   width: 659px;
-   height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  position: relative;
+  width: 659px;
+  height: 90px;
+  border: 1px solid linear-gradient(0deg, rgba(255, 255, 255, 0.4) 7.5%, rgba(153, 153, 153, 0.2) 100%);
+  border: 1px solid rgba(153, 153, 153, 0.2);
  }
  
  .searchButton {
@@ -109,7 +111,13 @@ body{
    width: 200px;
    color: rgba(255, 255, 255, 1);
  }
- .col-8 h5{
+ .rows{
+  margin-left: 10px;
+ }
+ .col8{
+  margin: 6px 12px 0 12px;
+ }
+ .col8 h5{
    font-family: Inter;
    font-size: 16px;
    font-weight: 500;
@@ -117,7 +125,7 @@ body{
    text-align: left;
    margin: 0!important;
  }
- .col-8 p{
+ .col8 p{
    font-family: Inter;
    font-size: 13px;
    font-weight: 400;
@@ -125,7 +133,7 @@ body{
    /* text-align: left;    */
    color: rgba(204, 204, 204, 1);
  }
-.col-4 img{
+.col4 img{
    border-radius: 30px;
 }
 .image-item{
@@ -298,6 +306,9 @@ body{
   display: flex;
   justify-content: center;
  }
+.rows{
+  display: flex;
+}
 @media screen and (max-width: 425px) {
    .container{
       display: none;

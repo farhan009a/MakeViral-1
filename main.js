@@ -14,9 +14,9 @@ fetch('https://randomuser.me/api/?results=15')
             const col8 = document.createElement('div');
 
             image.className = 'image-item';
-            row.className = 'row';
-            col4.className = 'col';
-            col8.className = 'col';
+            row.className = 'rows';
+            col4.className = 'col4';
+            col8.className = 'col8';
 
             const img = document.createElement('img');
             const h5 = document.createElement('h5');
