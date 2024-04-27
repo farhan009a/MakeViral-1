@@ -363,6 +363,10 @@ body{
   font-weight: 500;
   line-height: 29.05px;
   color: #fff;
+  margin: 0;
+}
+.human p{
+  margin-left: 10px;
 }
 @media screen and (max-width: 425px) {
    .container{
