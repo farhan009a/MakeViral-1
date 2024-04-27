@@ -48,8 +48,7 @@ body{
   position: relative;
   width: 659px;
   height: 90px;
-  border: 1px solid linear-gradient(0deg, rgba(255, 255, 255, 0.4) 7.5%, rgba(153, 153, 153, 0.2) 100%);
-  border: 1px solid rgba(153, 153, 153, 0.2);
+  border: 1.5px solid rgba(246, 245, 245, 0.2);
  }
  
  .searchButton {
