@@ -251,7 +251,7 @@ body{
 .fBox{
    background: rgba(17, 28, 46, 1);
    width: 500px;
-   height: 45px;
+   height: 60px;
    border-right:  solid black;
    opacity: 0px;
    display: flex; 
