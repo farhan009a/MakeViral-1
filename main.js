@@ -65,9 +65,6 @@ document.getElementById("searchButton").addEventListener("click", function () {
         setTimeout(function () {
             document.getElementById('loading').style.display = "block";
         }, 500);
-        setTimeout(function () {
-          document.getElementById('useNow').style.display = "none";
-      }, 500);
       setTimeout(function () {
         document.getElementById('human').style.display = "block";
         document.getElementById('human').className= "animate__animated animate__bounceInDown";
@@ -153,6 +150,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
     
                 a.innerHTML = value.anchor;
                 a.href = value.url;
+                a.target = '_'
                 singleOffer.className = 'singleOffer';
                 singleOffer.appendChild(a);
                 mainDiv.appendChild(singleOffer);

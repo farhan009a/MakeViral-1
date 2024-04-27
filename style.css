@@ -169,7 +169,7 @@ body{
     font-weight: 400;
     margin-bottom: 10px;
 }
-.recentUser h3{
+.recentUser h2{
    font-family: Inter;
    font-size: 24px;
    font-weight: 400;
@@ -192,7 +192,7 @@ body{
    text-align: left;
    width: 660px;
 }
-.useNow h6{
+.useNow h3{
    font-family: Inter;
    font-size: 20px;
    font-weight: 200;
@@ -395,6 +395,13 @@ body{
   margin-top: 40px;
   align-items: center;
   flex-direction: column;
+}
+.singleOffer:hover{
+  background: rgba(37, 243, 237, 1);
+  color: black!important;
+}
+.singleOffer a:hover{
+  color: black!important;
 }
 .singleOffer {
   display: flex;
