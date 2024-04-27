@@ -766,18 +766,18 @@ iframe{
   .custom-loader{
     width: 350px;
   }
-  .percentage {
-    position: absolute;
-    top: 0;
-    left: -60%;
-    margin: 23px 0;
-    opacity: 0;
-    display: none;
-    animation: percentage-animation 17s forwards;
-}
   .loader-container {
     position: relative;
     width: 375px;
+}
+.percentage {
+  position: absolute;
+  top: 0;
+  left: -60%;
+  margin: 23px 0;
+  opacity: 0;
+  display: none;
+  animation: percentage-animation 17s forwards;
 }
 } 
 @media screen and (max-width: 380px) {
@@ -785,7 +785,7 @@ iframe{
     position: absolute;
     top: 0;
     left: -60%;
-    margin: 24px 0px;
+    margin: 23px 0;
     opacity: 0;
     display: none;
     animation: percentage-animation 17s forwards;
