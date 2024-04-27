@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
@@ -41,7 +47,7 @@
                             <a class="nav-link" href="">TOS</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link " href="">How to use</a>
+                            <a class="nav-link " href="#useNow">How to use</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="">Contact</a>
@@ -89,16 +95,30 @@
         </div>
       </div>
     </div>
-    <div class="container makeitCenter">
-      <div class="human">
-        <h3><span>
-          <img src="./Img/bitcoin-icons_verify-outline.png" alt="">
-        </span>Human Verification</h3>
-        <p>Verify you are not a robot</p>
-        <button class="verifyButton" id="verifyButton" href="#">Verify</button>
+    <div style="margin-top: 30px;" class="container makeitCenter">
+      <div id="human">
+        <div class="human">
+          <h3><span>
+            <img src="./Img/bitcoin-icons_verify-outline.png" alt="">
+          </span>Human Verification</h3>
+          <p>Verify you are not a robot</p>
+          <button class="verifyButton" id="verifyButton" href="#">Verify</button>
+        </div>
       </div>
     </div>
-    <div class="useNow container">
+    <div id="OfferBoxMain" class="OfferBoxMain makeitCenter">
+      <div class="container makeitCenter">
+        <div class="offer">
+          <h3><span>
+            <img src="./Img/bitcoin-icons_verify-outline.png" alt="">
+          </span>Human Verification</h3>
+          <p>Complete any option below to verify you are not a robot</p>
+          <div data-aos="fade-left" id="offerBox" class="offerBox">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="useNow" class="useNow container">
       <div class="useH">
         <h6><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" viewBox="0 0 256 256" xml:space="preserve">
 
@@ -167,5 +187,9 @@
       setInterval(loop, 10);
     </script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

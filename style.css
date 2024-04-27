@@ -367,6 +367,56 @@ body{
 }
 .human p{
   margin-left: 10px;
+  color: rgba(204, 204, 204, 1);
+}
+.offer h3{
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29.05px;
+  color: #fff;
+  margin: 0;
+}
+.offer p{
+  margin-left: 45px;
+  color: rgba(204, 204, 204, 1);
+}
+.offer{
+  width: 659px;
+  height: auto;
+  border: 2px dotted rgba(21, 143, 139, 0.5);
+  border-radius: 10px;
+  background: rgba(17, 28, 46, 1);
+  padding: 30px;
+}
+.offerBox{
+  display: flex;
+  justify-content:center;
+  margin-top: 40px;
+  align-items: center;
+  flex-direction: column;
+}
+.singleOffer {
+  display: flex;
+  align-items: center;
+  width: 579px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid rgba(30, 196, 191, 0.5);
+  opacity: 0px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+.singleOffer a{
+  text-decoration: none;
+  color: #fff!important;
+  margin: 0!important;
+}
+.OfferBoxMain{
+  display: none;
+}
+#human{
+  display: none;
 }
 @media screen and (max-width: 425px) {
    .container{
