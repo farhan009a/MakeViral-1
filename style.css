@@ -48,7 +48,7 @@ body{
   position: relative;
   width: 659px;
   height: 90px;
-  border: 1.5px solid rgba(246, 245, 245, 0.2);
+  border: 1px solid white;
  }
  
  .searchButton {
