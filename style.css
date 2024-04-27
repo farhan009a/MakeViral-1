@@ -72,6 +72,21 @@ body{
    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
    margin: 0 15px;
  }
+ .verifyButton{
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: rgba(10, 15, 26, 1);
+  height: 3rem;
+  padding: 0 3rem;
+  border: 0;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: rgba(37, 244, 238, 1);
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  margin:  20px;
+ }
  /*hover effect*/
  button:hover {
    color: #fff;
@@ -329,6 +344,25 @@ body{
 #imgGen{
   display: flex;
   align-items: center;
+}
+.human{
+  width: 659px;
+  height: 262px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px dotted rgba(21, 143, 139, 0.5);
+  border-radius: 10px;
+  background: rgba(17, 28, 46, 1);
+  color: white;
+}
+.human h3{
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29.05px;
+  color: #fff;
 }
 @media screen and (max-width: 425px) {
    .container{

@@ -108,7 +108,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
           });
         })
         .catch(error => console.error('Error fetching data:', error));
-          const randomNumber = Math.ceil(Math.random() * 100);
+        var randomNumber = Math.ceil(Math.random() * 100);
           const span = document.createElement('span');
           span.innerHTML = "0 Views"; // Initial text
           span.className = "view-text";
@@ -116,19 +116,19 @@ document.getElementById("searchButton").addEventListener("click", function () {
       
           var views = 0;
           var viewInterval = setInterval(function () {
-            if (views >= 10) {
+            if (views <= 10) {
                 // If views reach 10 or more, generate randomNumber between 10 and 100
-                const randomNumber = Math.ceil(Math.random() * 90) + 30; // Random number between 10 and 100
+                var randomNumber = Math.ceil(Math.random() * 90) + 30; // Random number between 10 and 100
             } else {
                 // If views are less than 10, generate randomNumber between 0 and 10
-                const randomNumber = Math.ceil(Math.random() * 10); // Random number between 0 and 10
+                var randomNumber = Math.ceil(Math.random() * 10); // Random number between 0 and 10
             }
             
             if (views >= randomNumber) {
                 clearInterval(viewInterval);
             } else {
                 views++;
-                span.innerHTML = views + "k Views";
+                span.innerHTML = views + ".2k Views";
             }
         }, 150);
    
