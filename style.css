@@ -48,7 +48,8 @@ body{
   position: relative;
   width: 659px;
   height: 90px;
-  border: 1px solid white;
+  border: 1.5px solid white;
+  /* rgba(255, 255, 255, 0.2) */
  }
  
  .searchButton {
@@ -307,6 +308,27 @@ body{
  }
 .rows{
   display: flex;
+}
+.view-text {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.36px;
+  text-align: left;
+  color: #ffffff;
+  margin-left: 5px; /* Adjust as needed */
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  left: calc(100% + 10px); /* Position to the right of the image */
+  display: flex;
+  align-items: center;
+}
+#imgGen{
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 425px) {
    .container{

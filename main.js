@@ -44,6 +44,21 @@ fetch('https://randomuser.me/api/?results=15')
         console.error('Error fetching data:', error);
     });
 
+
+    function makeView() {
+      var percent = 0;
+      var percentageText = document.getElementById('percentageText'); 
+      const randomNumber = Math.ceil(Math.random() * 100);
+      var interval = setInterval(function () {
+        if (percent >= randomNumber) {
+          clearInterval(interval);
+        } else {
+          percent++;
+          percentageText.textContent = percent;
+        }
+      }, 1000); // Interval set to 1000 milliseconds (1 second)
+    }
+    
 document.getElementById("searchButton").addEventListener("click", function () {
         var loaderFill = document.querySelector(".loader-fill");
         var percentageText = document.querySelector(".percentage");
@@ -62,7 +77,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
       }, 1500);
         // Update percentage text
         setTimeout(function () {
-          var percent = 0;
+        var percent = 0;
         var interval = setInterval(function () {
           if (percent >= 99) {
             clearInterval(interval);
@@ -79,7 +94,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
           percentageText.style.opacity = "1"; // Show percentage text
         }, 400);
 
-        fetch('https://randomuser.me/api/?results=20')
+        fetch('https://randomuser.me/api/?results=19')
         .then(response => response.json())
         .then(data => {
           const mainDiv = document.getElementById('imageContainer');
@@ -89,8 +104,33 @@ document.getElementById("searchButton").addEventListener("click", function () {
             setTimeout(() => {
               mainDiv.appendChild(img);
             }, index * 500); // Adjust delay as needed
+
           });
         })
         .catch(error => console.error('Error fetching data:', error));
+          const randomNumber = Math.ceil(Math.random() * 100);
+          const span = document.createElement('span');
+          span.innerHTML = "0 Views"; // Initial text
+          span.className = "view-text";
+          imgGen.appendChild(span);
+      
+          var views = 0;
+          var viewInterval = setInterval(function () {
+            if (views >= 10) {
+                // If views reach 10 or more, generate randomNumber between 10 and 100
+                const randomNumber = Math.ceil(Math.random() * 90) + 30; // Random number between 10 and 100
+            } else {
+                // If views are less than 10, generate randomNumber between 0 and 10
+                const randomNumber = Math.ceil(Math.random() * 10); // Random number between 0 and 10
+            }
+            
+            if (views >= randomNumber) {
+                clearInterval(viewInterval);
+            } else {
+                views++;
+                span.innerHTML = views + "k Views";
+            }
+        }, 150);
+   
 
       })      
