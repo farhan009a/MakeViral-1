@@ -67,7 +67,6 @@ document.getElementById("searchButton2").addEventListener("click", function () {
       }, 500);
     setTimeout(function () {
       document.getElementById('human').style.display = "block";
-      document.getElementById('human').className= "animate__animated animate__bounceInDown";
   }, 17500);
     
       // Reset loader animation
