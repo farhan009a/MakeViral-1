@@ -235,11 +235,9 @@ body{
  
  @keyframes percentage-animation {
    0% {
-     opacity: 0;
-     left: -10%; /* Adjust the starting position */
+     left: 0%; /* Adjust the starting position */
    }
    100% {
-     opacity: 1;
      left: 100%; /* Move to the right side */
    }
  }
