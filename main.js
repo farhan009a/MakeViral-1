@@ -224,7 +224,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
 
       // Check if the domain is null
       if (domain === null) {
-          alert("Please enter a valid URL.");
+          alert("Please enter a URL.");
           return; // Stop execution if the domain is null
       }
 
