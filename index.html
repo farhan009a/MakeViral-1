@@ -47,7 +47,7 @@
                             <a class="nav-link" href="">TOS</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link " href="#useNow">How to use</a>
+                              <a class="nav-link" href="#" onclick="smoothScrollTo('useNow')">How to use</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="">Contact</a>
@@ -74,12 +74,12 @@
                   </g>
                   </svg>
                 <input class="searchInput" id="searchInput" type="text" name="" placeholder="Enter your content URL">
-                <button class="searchButton" id="searchButton" href="#">Proceed</button> <br>
+               <button onclick="smoothScrollTo('footer')" class="searchButton" id="searchButton">Proceed</button>
               </div>
             </div>
           </div>
           <div class="makeitCenter">
-            <button class="searchButton2" id="searchButton2" href="#">Proceed</button>
+            <button onclick="smoothScrollTo('footer')" class="searchButton2" id="searchButton2">Proceed</button>
           </div>
     </div>
     <div id="loading">
@@ -99,8 +99,8 @@
       </div>
     </div>
     <div class="container makeitCenter">
-      <div data-aos="fade-up" id="human">
-        <div class="human animate__animated animate__bounceInDown">
+      <div id="human" >
+        <div class="human">
           <h3><span>
             <img src="./Img/bitcoin-icons_verify-outline.png" alt="">
           </span>Human Verification</h3>
@@ -153,7 +153,7 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <div class="Home fBox">
         <a href="">Home</a>
       </div>
@@ -188,6 +188,20 @@
 
       // Set interval to run the loop function every 10 milliseconds
       setInterval(loop, 10);
+    function smoothScrollTo(targetId) {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+        // Calculate the distance to scroll
+        const offsetTop = targetElement.offsetTop;
+
+        // Scroll smoothly to the target element
+        window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+}
+
     </script>
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
