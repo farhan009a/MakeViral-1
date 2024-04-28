@@ -429,13 +429,11 @@ body{
   align-items: center;
   flex-direction: column;
 }
-.singleOffer:hover{
+.singleOffer:hover {
   background: rgba(37, 243, 237, 1);
-  color: black!important;
+  color: black !important;
 }
-.singleOffer a:hover{
-  color: black!important;
-}
+
 .singleOffer {
   display: flex;
   align-items: center;
@@ -446,12 +444,10 @@ body{
   opacity: 0px;
   margin-bottom: 10px;
   padding: 20px;
+  text-decoration: none; /* Moved from .singleOffer a */
+  color: #fff !important; /* Moved from .singleOffer a */
 }
-.singleOffer a{
-  text-decoration: none;
-  color: #fff!important;
-  margin: 0!important;
-}
+
 .OfferBoxMain{
   display: none;
 }

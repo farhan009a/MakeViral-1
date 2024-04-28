@@ -250,6 +250,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
       setTimeout(function () {
         buttonClicked = true;
           document.getElementById('loading').style.display = "block";
+          // const cancelBtn = document.getElementById('cancel')
       }, 500);
       setTimeout(function () {
           document.getElementById('human').style.display = "block";
@@ -350,14 +351,14 @@ document.getElementById("searchButton").addEventListener("click", function () {
             firstFiveData.forEach(value => {
                 const mainDiv = document.getElementById('offerBox');
                 const a = document.createElement('a');
-                const singleOffer = document.createElement('div');
+                // const singleOffer = document.createElement('div');
     
                 a.innerHTML = value.anchor;
                 a.href = value.url;
                 a.target = '_'
-                singleOffer.className = 'singleOffer';
-                singleOffer.appendChild(a);
-                mainDiv.appendChild(singleOffer);
+                a.className = 'singleOffer';
+                // singleOffer.appendChild(a);
+                mainDiv.appendChild(a);
             });
         })
         .catch(error => {
