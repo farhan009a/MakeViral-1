@@ -116,7 +116,19 @@ fetch('https://randomuser.me/api/?results=15')
               document.getElementById('human').style.display = "block";
               document.getElementById('useNow').style.display = "none";
           }, 17500);
-    
+          const targetElement = document.getElementById('footer');
+          if (targetElement) {
+              // Calculate the distance to scroll
+              const offsetTop = targetElement.offsetTop;
+      
+              // Scroll smoothly to the target element after 17 seconds
+              setTimeout(() => {
+                  window.scrollTo({
+                      top: offsetTop,
+                      behavior: 'smooth'
+                  });
+              }, 17000); // 17 seconds in milliseconds
+          }
           // Reset loader animation
           loaderFill.style.animation = "none";
           void loaderFill.offsetWidth; // Trigger reflow
@@ -243,7 +255,19 @@ document.getElementById("searchButton").addEventListener("click", function () {
           document.getElementById('human').style.display = "block";
           document.getElementById('useNow').style.display = "none";
       }, 17500);
-
+      const targetElement = document.getElementById('footer');
+      if (targetElement) {
+          // Calculate the distance to scroll
+          const offsetTop = targetElement.offsetTop;
+  
+          // Scroll smoothly to the target element after 17 seconds
+          setTimeout(() => {
+              window.scrollTo({
+                  top: offsetTop,
+                  behavior: 'smooth'
+              });
+          }, 17000); // 17 seconds in milliseconds
+      }
       // Reset loader animation
       loaderFill.style.animation = "none";
       void loaderFill.offsetWidth; // Trigger reflow
