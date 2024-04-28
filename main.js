@@ -154,6 +154,7 @@ document.getElementById("searchButton").addEventListener("click", function () {
         }, 500);
         setTimeout(function () {
             document.getElementById('human').style.display = "block";
+            document.getElementById('useNow').style.display = "none";
         }, 17500);
         
         // Reset loader animation
