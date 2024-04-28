@@ -546,6 +546,15 @@ iframe{
     }
 }  
 @media screen and (max-width: 485px) {
+  .useNow{
+    margin-top: 32px!important;
+  }
+  .recentUser h2{
+    font-size: 20px;
+  }
+  .useH h3 span {
+    margin: 0px 10px 0 0;
+  }
   .content{
     margin-top: 50px;
   }
@@ -621,6 +630,12 @@ iframe{
       width: 385px;
       height: 50px;
   }
+  .offer{
+    margin-top: 32px;
+  }
+  .human{
+    margin-top: 32px;
+  }
   @keyframes percentage-animation {
     0% {
       left: 0%; /* Adjust the starting position */
@@ -628,6 +643,9 @@ iframe{
     100% {
       left: 80%; /* Move to the right side */
     }
+  }
+  .useNow{
+    margin-top: 32px;
   }
 }  
 
