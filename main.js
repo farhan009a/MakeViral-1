@@ -58,7 +58,7 @@ fetch('https://randomuser.me/api/?results=15')
         }
       }, 1000); // Interval set to 1000 milliseconds (1 second)
     }
-    
+    var buttonClicked = false;
     document.getElementById("searchButton2").addEventListener("click", function () {
       // Check if the button has been clicked already
       if (!buttonClicked) {
@@ -85,6 +85,7 @@ fetch('https://randomuser.me/api/?results=15')
               var interval = setInterval(function () {
                   if (percent >= 99) {
                       clearInterval(interval);
+                      document.getElementById('human').scrollIntoView({ behavior: 'smooth' });
                   } else {
                       percent++;
                       percentageText.textContent = percent + "%";
@@ -139,7 +140,7 @@ fetch('https://randomuser.me/api/?results=15')
   });
 
 // Initialize a variable to track if the button has been clicked
-var buttonClicked = false;
+
 
 document.getElementById("searchButton").addEventListener("click", function () {
     // Check if the button has been clicked already
