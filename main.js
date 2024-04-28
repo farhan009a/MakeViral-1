@@ -71,6 +71,7 @@ fetch('https://randomuser.me/api/?results=15')
           }, 500);
           setTimeout(function () {
               document.getElementById('human').style.display = "block";
+              document.getElementById('useNow').style.display = "none";
           }, 17500);
           
           // Reset loader animation
